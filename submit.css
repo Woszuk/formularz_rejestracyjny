@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(171, 255, 45);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tick {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-right: 1rem solid black;
+    border-bottom: 1rem solid black;
+    display: inline-block;
+    padding: 3.5rem 2rem;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
