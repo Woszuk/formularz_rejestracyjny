@@ -106,8 +106,13 @@ function changeInputValueAndValidate(data) {
     $('#city').val(data.find(el => el.miejscowosc)?.miejscowosc)
     $('#street').val(data.find(el => el.ulica)?.ulica)
 
-    validator.element('#city');        
-    validator.element('#street');  
+    if($('#city').val() !== '') {
+        validator.element('#city');        
+    }
+
+    if($('#street').val() !== '') {     
+        validator.element('#street');  
+    }
 }
 
 function createList(data) {
